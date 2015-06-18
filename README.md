@@ -1,5 +1,7 @@
 # jQuery overlay-placeholder Plugin
 
+[http://tacamy.github.io/jquery.overlay-placeholder/](http://tacamy.github.io/jquery.overlay-placeholder/)
+
 This plug-in doesn't conflict with other JavaScript, because it doesn't change the value.
 
 ## Example Usage
