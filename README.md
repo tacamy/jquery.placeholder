@@ -27,19 +27,19 @@ $('[placeholder]').ovPlaceholder({
 
 If you want to change the class name of the wrapper element, please set the class name.
 
-default: 'ov-placeholder'
+default: `'ov-placeholder'`
 
 ### overlay
 
 If you want to change the class name of the overlay element, please set the class name.
 
-default: 'ov-placeholder__overlay'
+default: `'ov-placeholder__overlay'`
 
 ### color
 
 If you want to change the color of the placeholder text, please set the color code.
 
-default: '#AAA'
+default: `'#AAA'`
 
 ## License
 
