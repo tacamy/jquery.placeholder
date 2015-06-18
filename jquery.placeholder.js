@@ -6,9 +6,9 @@
   $.fn.placeholder = function (options) {
 
     var defaults = {
-      wrapper : 'placeholder',
-      overlay : 'placeholder__overlay',
-      color   : '#AAA'
+      color   : '#AAA',
+      wrapper : 'placeholder-wrapper',
+      overlay : 'placeholder-overlay'
     };
 
     var settings = $.extend({}, defaults, options);

@@ -20,8 +20,10 @@ This plug-in doesn't conflict with other JavaScript, because it doesn't change t
 ## Options
 
 ```js
-$('[placeholder]').placeholder({
-  color: '#999'
+$('[placeholder]').ovPlaceholder({
+  color: '#999',
+  wrapper : 'wrapper',
+  overlay : 'overlay'
 });
 ```
 
@@ -30,6 +32,18 @@ $('[placeholder]').placeholder({
 If you want to change the color of the placeholder text, please set the color code.
 
 default: `'#AAA'`
+
+### wrapper
+
+If you want to change the class name of the wrapper element, please set the class name.
+
+default: `'overlay-placeholder'`
+
+### overlay
+
+If you want to change the class name of the overlay element, please set the class name.
+
+default: `'overlay-placeholder__overlay'`
 
 ## Browsers
 
