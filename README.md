@@ -1,4 +1,4 @@
-# jQuery ov-placeholder Plugin
+# jQuery overlay-placeholder Plugin
 
 ## Example Usage
 
@@ -7,9 +7,9 @@
 <textarea placeholder="placeholder text"></textarea>
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="jquery.ov-placeholder.js"></script>
+<script src="jquery.overlay-placeholder.js"></script>
 <script>
-  $('[placeholder]').ovPlaceholder();
+  $('[placeholder]').overlayPlaceholder();
 </script>
 ```
 
@@ -27,13 +27,13 @@ $('[placeholder]').ovPlaceholder({
 
 If you want to change the class name of the wrapper element, please set the class name.
 
-default: `'ov-placeholder'`
+default: `'overlay-placeholder'`
 
 ### overlay
 
 If you want to change the class name of the overlay element, please set the class name.
 
-default: `'ov-placeholder__overlay'`
+default: `'overlay-placeholder__overlay'`
 
 ### color
 
