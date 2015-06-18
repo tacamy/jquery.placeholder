@@ -1,6 +1,6 @@
-# jQuery overlay-placeholder Plugin
+# jQuery placeholder Plugin
 
-[http://tacamy.github.io/jquery.overlay-placeholder/](http://tacamy.github.io/jquery.overlay-placeholder/)
+[http://tacamy.github.io/jquery.placeholder/](http://tacamy.github.io/jquery.placeholder/)
 
 This plug-in doesn't conflict with other JavaScript, because it doesn't change the value.
 
@@ -11,33 +11,19 @@ This plug-in doesn't conflict with other JavaScript, because it doesn't change t
 <textarea placeholder="placeholder text"></textarea>
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="jquery.overlay-placeholder.js"></script>
+<script src="jquery.placeholder.js"></script>
 <script>
-  $('[placeholder]').overlayPlaceholder();
+  $('[placeholder]').placeholder();
 </script>
 ```
 
 ## Options
 
 ```js
-$('[placeholder]').overlayPlaceholder({
-  wrapper : 'wrapper',
-  overlay : 'overlay',
+$('[placeholder]').placeholder({
   color: '#999'
 });
 ```
-
-### wrapper
-
-If you want to change the class name of the wrapper element, please set the class name.
-
-default: `'overlay-placeholder'`
-
-### overlay
-
-If you want to change the class name of the overlay element, please set the class name.
-
-default: `'overlay-placeholder__overlay'`
 
 ### color
 

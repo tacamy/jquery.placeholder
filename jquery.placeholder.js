@@ -1,13 +1,13 @@
-/*! http://github.com/tacamy/jquery.overlay-placeholder v1.0.0 by @tacamy */
+/*! http://github.com/tacamy/jquery.placeholder v1.0.0 by @tacamy */
 
 (function ($, window, document, undefined) {
   'use strict';
 
-  $.fn.overlayPlaceholder = function (options) {
+  $.fn.placeholder = function (options) {
 
     var defaults = {
-      wrapper : 'overlay-placeholder',
-      overlay : 'overlay-placeholder__overlay',
+      wrapper : 'placeholder',
+      overlay : 'placeholder__overlay',
       color   : '#AAA'
     };
 
