@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jQuery ov-placeholder Plugin</title>
+  <style>
+    input, textarea {
+      font-size: 16px;
+    }
+    .sample__item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>jQuery ov-placeholder Plugin</h1>
+
+  <div class="sample">
+    <div class="sample__item">
+      <input type="text" value="" placeholder="placeholder text">
+    </div>
+    <div class="sample__item">
+      <textarea placeholder="longplaceholdertextlongplaceholdertextlongplaceholdertext"></textarea>
+    </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="jquery.ov-placeholder.js"></script>
+  <script>
+    $('[placeholder]').ovPlaceholder();
+  </script>
+
+</body>
+</html>
