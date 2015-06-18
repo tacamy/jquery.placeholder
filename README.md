@@ -43,6 +43,10 @@ If you want to change the color of the placeholder text, please set the color co
 
 default: `'#AAA'`
 
+## Browsers
+
+IE6+ and other new browsers.
+
 ## License
 
 This plugin is available under the MIT license.
