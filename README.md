@@ -1,4 +1,4 @@
-# jQuery placeholder Plugin
+# jquery.placeholder Plugin
 
 [http://tacamy.github.io/jquery.placeholder/](http://tacamy.github.io/jquery.placeholder/)
 
