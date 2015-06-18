@@ -20,7 +20,7 @@ This plug-in doesn't conflict with other JavaScript, because it doesn't change t
 ## Options
 
 ```js
-$('[placeholder]').ovPlaceholder({
+$('[placeholder]').overlayPlaceholder({
   wrapper : 'wrapper',
   overlay : 'overlay',
   color: '#999'
