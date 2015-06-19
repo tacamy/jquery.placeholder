@@ -59,6 +59,12 @@ default: `'placeholder-ovarlay'`
 
 IE6+ and other new browsers.
 
+## Change log
+
+1.1.0 : Corresponding to the percentage specified in the textbox.
+
+1.1.0 : テキストボックスの`width`に`%`を指定しても崩れないように修正
+
 ## License
 
 This plugin is available under the MIT license.

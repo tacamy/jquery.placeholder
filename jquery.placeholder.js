@@ -1,21 +1,21 @@
-/*! http://github.com/tacamy/jquery.placeholder v1.0.0 by @tacamy */
+/*! http://github.com/tacamy/jquery.placeholder v1.1.0 by @tacamy */
 
 (function ($, window, document, undefined) {
   'use strict';
 
   $.fn.placeholder = function (options) {
 
+    if ('placeholder' in document.createElement('input')) {
+      return;
+    }
+
     var defaults = {
       color   : '#AAA',
       wrapper : 'placeholder-wrapper',
       overlay : 'placeholder-overlay'
     };
-
     var settings = $.extend({}, defaults, options);
-
-    if ('placeholder' in document.createElement('input')) {
-      return;
-    }
+    var $window = $(window);
 
     return this.each(function () {
       var el = this;
@@ -31,6 +31,7 @@
       var fontFamily = $el.css('font-family');
       var fontSize = $el.css('font-size');
       var lineHeight = $el.css('line-height');
+      var elWidth = el.currentStyle['width'];
 
       $overlay.text(text);
 
@@ -54,9 +55,14 @@
       $wrapper.css({
         display: 'inline-block',
         position: 'relative',
+        width: elWidth,
         lineHeight: lineHeight,
         fontFamily: fontFamily,
         fontSize: fontSize
+      });
+
+      $el.css({
+        width: '100%'
       });
 
       $overlay.on({
@@ -77,6 +83,12 @@
             $overlay.show();
           }
         }
+      });
+
+      $window.on('resize', function () {
+        $overlay.css({
+          width: el.clientWidth - parseInt($el.css('padding-left'), 10) * 2
+        });
       });
     });
   };
