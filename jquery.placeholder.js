@@ -61,9 +61,11 @@
         fontSize: fontSize
       });
 
-      $el.css({
-        width: '100%'
-      });
+      if (elWidth !== 'auto') {
+        $el.css({
+          width: '100%'
+        });
+      }
 
       $overlay.on({
         click: function () {
