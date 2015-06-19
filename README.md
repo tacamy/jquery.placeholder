@@ -31,7 +31,7 @@ placeholderのpolyfillはすでにたくさん存在しますが、テキスト�
 
 ```js
 $('[placeholder]').placeholder({
-  color: '#999',
+  color   : '#999',
   wrapper : 'wrapper',
   overlay : 'overlay'
 });
