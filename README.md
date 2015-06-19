@@ -20,7 +20,7 @@ This plug-in doesn't conflict with other JavaScript, because it doesn't change t
 ## Options
 
 ```js
-$('[placeholder]').ovPlaceholder({
+$('[placeholder]').placeholder({
   color: '#999',
   wrapper : 'wrapper',
   overlay : 'overlay'
@@ -37,13 +37,13 @@ default: `'#AAA'`
 
 If you want to change the class name of the wrapper element, please set the class name.
 
-default: `'overlay-placeholder'`
+default: `'placeholder-wrapper'`
 
 ### overlay
 
 If you want to change the class name of the overlay element, please set the class name.
 
-default: `'overlay-placeholder__overlay'`
+default: `'placeholder-ovarlay'`
 
 ## Browsers
 
