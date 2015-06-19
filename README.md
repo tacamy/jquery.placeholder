@@ -2,7 +2,17 @@
 
 [http://tacamy.github.io/jquery.placeholder/](http://tacamy.github.io/jquery.placeholder/)
 
-This plug-in doesn't conflict with other JavaScript, because it doesn't change the value.
+placeholderのpolyfillはすでにたくさん存在しますが、テキストボックスのvalueを書き換えるpolyfillはformを操作する他のJavaScriptと相性が悪いため、valueを書き換えないpolyfillを作りました。
+
+Polyfill of placeholder exists already a lot.
+In the case the polifil rewrites the value of the textbox, It conflict with JavaScript to manipulate the form.
+So, I made a polifil of placeholder that does not rewrite the value.
+
+- ブラウザがplaceholderに対応している場合は何もしない
+- valueの値は書き換えず、textboxの上に透明のspanを重ねる
+
+- If the browser is compatible with the placeholder, it does not work.
+- Overlay the span of transparent on the textbox.
 
 ## Example Usage
 
