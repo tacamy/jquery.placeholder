@@ -1,15 +1,11 @@
-/*! http://github.com/tacamy/jquery.placeholder v1.1.0 by @tacamy */
+/*! http://github.com/tacamy/jquery.placeholder v1.2.0 by @tacamy */
 
 (function ($, window, document, undefined) {
   'use strict';
 
   $.fn.placeholder = function (options) {
-
-    if ('placeholder' in document.createElement('input')) {
-      return;
-    }
-
     var defaults = {
+      attr    : 'placeholder',
       color   : '#AAA',
       wrapper : 'placeholder-wrapper',
       overlay : 'placeholder-overlay'
@@ -17,13 +13,17 @@
     var settings = $.extend({}, defaults, options);
     var $window = $(window);
 
+    if (settings.attr === 'placeholder' && 'placeholder' in document.createElement('input')) {
+      return;
+    }
+
     return this.each(function () {
       var el = this;
       var $el = $(el);
       var $wrapper = $el.wrapAll('<span class="' + settings.wrapper + '" />').closest('.' + settings.wrapper);
       var $overlay = $wrapper.append('<span class="' + settings.overlay + '" />').find('.' + settings.overlay);
 
-      var text = $el.attr('placeholder');
+      var text = $el.attr(settings.attr);
       var left = parseInt($el.css('padding-left'), 10) + parseInt($el.css('border-left-width'), 10);
       var top = parseInt($el.css('padding-top'), 10) + parseInt($el.css('border-top-width'), 10);
       var width = el.clientWidth - parseInt($el.css('padding-left'), 10) * 2;

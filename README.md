@@ -11,7 +11,7 @@ So, I made a polifil of placeholder that does not rewrite the value.
 
 placeholderのpolyfillはすでにたくさん存在しますが、テキストボックスの`value`を書き換えるpolyfillはフォームを操作する他のJavaScriptと相性が悪いため、`value`を書き換えないpolyfillを作りました。
 
-- ブラウザがplaceholderに対応している場合は何もしない
+- attr属性がデフォルトの`'placeholder'`の場合は、ブラウザがplaceholderに対応している場合は何もしない
 - テキストボックスの上に透明の`span`を重ねて、擬似的にplaceholderを再現
 
 ## Example Usage
@@ -31,11 +31,20 @@ placeholderのpolyfillはすでにたくさん存在しますが、テキスト�
 
 ```js
 $('[placeholder]').placeholder({
+  attr    : 'title',
   color   : '#999',
   wrapper : 'wrapper',
   overlay : 'overlay'
 });
 ```
+
+### attr
+
+If you want to change the attribute of the placeholder text, please set the attribute.
+
+default: `placeholder`
+
+In the case of the `attr: 'placeholder'`, it is a modern browser does not do anything, but otherwise it will work with all browsers.
 
 ### color
 
